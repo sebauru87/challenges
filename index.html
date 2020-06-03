@@ -32,6 +32,7 @@
         </div>
       </div>
     </div>
+    <br>
     <div class="container-2">
       <h1>Challenge 2: Cat generator</h1>
       <div>
@@ -42,6 +43,7 @@
 
       <div class="flex-box-2" id="result2"></div>
     </div>
+    <br>
     <div class="container-3">
       <h1>Challenge 3: Rock, Paper, Scissors</h1>
       <div class="flex-box-3">
@@ -73,6 +75,7 @@
         </div>
       </div>
     </div>
+    <br>
     <div class="container-4">
       <h1>Challenge 4: Change the Color of All Buttons!</h1>
       <div class="flex-box-4">
@@ -81,7 +84,8 @@
             <select
               name="backdrop"
               id="background"
-              onchange="buttonColorChange(this)">
+              onchange="buttonColorChange(this)"
+            >
               <option value="random">Random</option>
               <option value="red">Red</option>
               <option value="blue">Blue</option>
@@ -95,6 +99,41 @@
           <button class="btn btn-warning">Google!</button>
           <button class="btn btn-success">Facebook!</button>
         </div>
+      </div>
+    </div>
+    <br>
+    <div class="container-5">
+      <h1>Challenge 5: Blackjack</h1>
+      <h2 id="mBlack">Let's Play</h2>
+      <div class="flex-box-5">
+        <div class="flex-blackjack-row-1">
+          <div id="your-box">
+            <h2>You: <span id="your-blackjack-score">0</span></h2>
+          </div>
+
+          <div id="dealer-box">
+            <h2>Dealer: <span id="dealer-blackjack-score">0</span></h2>
+          </div>
+        </div>
+        <div class="flex-blackjack-row-2">
+          <button class="btn btn-primary">Hit</button>
+          <button class="btn btn-warning">Stand</button>
+          <button class="btn btn-danger">Deal</button>
+        </div>
+      </div>
+      <div id="blackDiv">
+        <table id="blackTable" class="table table-striped">
+          <tr>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Draws</th>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+        </table>
       </div>
     </div>
 

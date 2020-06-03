@@ -76,3 +76,37 @@ body {
 button {
   border-radius: 12px;
 }
+
+.flex-box-5 {
+  /* display: flex; */
+  border: 1px solid black;
+  padding: 5px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 9px;
+  height: 400px;
+  background: url(../img/green-poker-table-background_87414-3611.jpg) center;
+  color: #ffffff;
+}
+
+.flex-blackjack-row-1 {
+  border: 1px solid black;
+  border-radius: 9px;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  flex: content;
+}
+.flex-blackjack-row-2{
+  border: 1px solid black;
+  border-radius: 9px;
+}
+#your-box, #dealer-box{
+  border: 1px solid black;
+  width: 50%;
+}
+
+#blackTable, #blackDiv {
+  width: auto;
+  margin: auto;
+}
