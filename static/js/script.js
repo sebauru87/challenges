@@ -87,3 +87,43 @@ function randomComputer() {
     var computer = Math.floor(Math.random() * 3) + 1;
     return computer;
 }
+
+//challenge 4
+var copyButtonsClass = [];
+var allButtons = $('button');
+for (let i = 0; i < allButtons.length; i++) {
+    //alert(allButtons[i]);
+    copyButtonsClass.push(allButtons[i].classList[1]);
+}
+
+function buttonColorChange(selected) {
+    //alert(selected.value);
+    changeColorBut(selected.value);
+}
+
+function changeColorBut(color) {
+    $('button').css('background-color', color);
+    if (color == 'reset') {
+        $('button').removeAttr('style');
+        $('button').removeClass();
+        for (let i = 0; i < allButtons.length; i++) {
+            allButtons[i].classList.add("btn", copyButtonsClass[i]);
+        }
+    } else if (color == 'random') {
+        $('button').removeAttr('style');
+        $('button').removeClass();
+        for (let i = 0; i < allButtons.length; i++) {
+            //.addClass("btn").addClass(randomColorBut());
+            allButtons[i].classList.add("btn", randomColorBut());
+        }
+
+    }
+}
+
+function randomColorBut() {
+    var choices = ['btn-primary', 'btn-danger', 'btn-success', 'btn-warning'];
+    //alert(choices[0]);
+    //console.log(String(choices[0]));
+    let randomNumber = Math.floor(Math.random() * 4);
+    return choices[randomNumber];
+}
