@@ -16,25 +16,48 @@
     <link rel="stylesheet" href="static/css/style.css" />
     <title>Javascript Challenges</title>
   </head>
+
   <body>
     <div class="container-1">
       <h1>Challenge 1: Your age in days</h1>
       <div class="flex-box-1">
         <div>
-          <button class="btn btn-primary" onclick="calculateDays()">Click me</button>
+          <button class="btn btn-primary" onclick="calculateDays()">
+            Click me
+          </button>
         </div>
         <div id="result1"></div>
         <div>
           <button class="btn btn-danger" onclick="resetDays()">Reset</button>
         </div>
+      </div>
+    </div>
+    <div class="container-2">
+      <h1>Challenge 2: Cat generator</h1>
+      <div>
+        <button class="btn btn-success" onclick="generateCat()">
+          Generate Cat
+        </button>
+      </div>
+
+      <div class="flex-box-2" id="result2"></div>
+    </div>
+    <div class="container-3">
+      <h1>Challenge 3: Rock, Paper, Scissors </h1>
+      <div class="flex-box-3">
+
+        <div id="result3">
+          <img id="rock" src="static/img/rock.svg" alt="" height="150" width="150" onclick="rpsGame(this)">
+          <img id="paper" src="static/img/paper.svg" alt="" height="150" width="150" onclick="rpsGame(this)">
+          <img id="scissors" src="static/img/scissors.svg" alt="" height="150" width="150" onclick="rpsGame(this)">
+        </div>
 
       </div>
     </div>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="static/js/script.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" ></script>
+    <script src="static/js/script.js"></script>
   </body>
 </html>
