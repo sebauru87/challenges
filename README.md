@@ -1,5 +1,5 @@
 # challenges
-I finsh 6 different challenges:
+I finsh 6 different challenges in javascript:
 Your age in days,
 Cat generator,
 Rock, Paper, Scissors,
