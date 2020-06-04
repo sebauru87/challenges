@@ -321,3 +321,21 @@ function showResult() {
     document.querySelector('#blackjack-result').textContent = message;
     document.querySelector('#blackjack-result').style.color = messageColor;
 }
+
+//challenge 6 10 random api ppl
+const URL = 'https://randomuser.me/api/?results=10';
+fetch(URL)
+    .then(
+        response => response.json()
+    )
+    .then(data => {
+        let authors = data.results;
+        authors.forEach(person => {
+            //console.log(person['name']['first']);
+            let personImg = '<img src=' + person.picture.large + '>';
+            let personP = '<p>' + person.name.first + ' ' + person.name.last + '</p>';
+            $('#result6').append('<div>' + personImg + personP + '</div>');
+            //console.log(person.name.first);
+        });
+
+    })

@@ -119,9 +119,12 @@ button {
 #result6 {
   display: flex;
   border: 1px solid black;
-  padding: 5px;
+  padding: 20px;
   justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: row;
   border-radius: 9px;
+}
+#result6 div {
+  padding: 40px;
 }
