@@ -32,7 +32,7 @@
         </div>
       </div>
     </div>
-    <br>
+    <br />
     <div class="container-2">
       <h1>Challenge 2: Cat generator</h1>
       <div>
@@ -43,7 +43,7 @@
 
       <div class="flex-box-2" id="result2"></div>
     </div>
-    <br>
+    <br />
     <div class="container-3">
       <h1>Challenge 3: Rock, Paper, Scissors</h1>
       <div class="flex-box-3">
@@ -75,7 +75,7 @@
         </div>
       </div>
     </div>
-    <br>
+    <br />
     <div class="container-4">
       <h1>Challenge 4: Change the Color of All Buttons!</h1>
       <div class="flex-box-4">
@@ -101,10 +101,10 @@
         </div>
       </div>
     </div>
-    <br>
+    <br />
     <div class="container-5">
       <h1>Challenge 5: Blackjack</h1>
-      <h2 id="mBlack">Let's Play</h2>
+      <h2 id="mBlack"><span id="blackjack-result">Let's play</span></h2>
       <div class="flex-box-5">
         <div class="flex-blackjack-row-1">
           <div id="your-box">
@@ -116,9 +116,13 @@
           </div>
         </div>
         <div class="flex-blackjack-row-2">
-          <button class="btn btn-primary">Hit</button>
-          <button class="btn btn-warning">Stand</button>
-          <button class="btn btn-danger">Deal</button>
+          <button class="btn btn-primary" id="blackjack-hit-button">Hit</button>
+          <button class="btn btn-warning" id="blackjack-stand-button">
+            Stand
+          </button>
+          <button class="btn btn-danger" id="blackjack-deal-button">
+            Deal
+          </button>
         </div>
       </div>
       <div id="blackDiv">
@@ -129,14 +133,20 @@
             <th>Draws</th>
           </tr>
           <tr>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
+            <td><span id="wins">0</span></td>
+            <td><span id="losses">0</span></td>
+            <td><span id="draws">0</span></td>
           </tr>
         </table>
       </div>
     </div>
-
+    <br />
+    <div class="container-6">
+      <h1>Challenge 6: AJAX API's - Random User Generator</h1>
+      <div class="flex-box-6">
+        <div id="result6"></div>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>

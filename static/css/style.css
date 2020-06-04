@@ -105,8 +105,23 @@ button {
   border: 1px solid black;
   width: 50%;
 }
+#cards {
+  height: 30%;
+  width: 20%;
+  padding: 2px;
+}
 
 #blackTable, #blackDiv {
   width: auto;
   margin: auto;
+}
+
+#result6 {
+  display: flex;
+  border: 1px solid black;
+  padding: 5px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border-radius: 9px;
 }
